@@ -50,3 +50,27 @@ and file ownership and permissions control access to resources.
 ## Safety
 This exercise uses a directory and file inside the project.
 No system users or groups were modified.
+
+## Additional Exercise: Group File Permissions
+
+### Create and inspect a practice file
+```bash
+touch labs/users-groups-lab/team-files/group-access.txt
+chmod 640 labs/users-groups-lab/team-files/group-access.txt
+stat -c 'Owner: %U | Group: %G | Permissions: %a (%A)' \
+labs/users-groups-lab/team-files/group-access.txt
+```
+
+### Verified Result
+- Owner: `sikafofro`
+- Group: `sikafofro`
+- Permissions: `640` (`-rw-r-----`)
+
+### Key Learning
+- The owner has read and write permissions.
+- Members of the file's group have read permission.
+- Other users have no permissions.
+- Setting group permissions does not change the file's group ownership.
+
+## Safety
+This exercise changes permissions only on a practice file inside the repository.
