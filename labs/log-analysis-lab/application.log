@@ -1,0 +1,7 @@
+2026-10-24 07:00:01 INFO Application started
+2026-10-24 07:01:12 WARNING Disk usage reached 75 percent
+2026-10-24 07:02:30 ERROR Failed to connect to database
+2026-10-24 07:03:15 INFO Retrying database connection
+2026-10-24 07:04:02 ERROR Database connection timed out
+2026-10-24 07:05:10 WARNING Response time is elevated
+2026-10-24 07:06:00 INFO Database connection restored
